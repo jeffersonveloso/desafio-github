@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm install
-      - run: npm run start:dev
+      - run: npm run start
       - run: timeout=200s -wait=http://localhost:3000
       - run: npm run test
